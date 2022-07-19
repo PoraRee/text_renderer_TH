@@ -13,4 +13,6 @@ RUN pip3 install -r docker/requirements.txt && \
     python3 setup.py develop
 
 ENV TERM xterm-256color
-CMD sh docker/run.sh
+CMD sh ./docker/run.sh
+
+#docker build -t text_renderer -f ./docker/Dockerfile .
