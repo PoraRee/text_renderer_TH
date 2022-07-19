@@ -112,7 +112,19 @@ def eng_word_data():
             ),
         ),
     )
-
+    
+def th_word_data():
+    return base_cfg(
+        inspect.currentframe().f_code.co_name,
+        corpus=EnumCorpus(
+            EnumCorpusCfg(
+                text_paths=[TEXT_DIR / "th_text.txt"],
+                filter_by_chars=True,
+                chars_file=CHAR_DIR / "th.txt",
+                **font_cfg
+            ),
+        ),
+    )
 
 def same_line_data():
     return base_cfg(
@@ -203,12 +215,15 @@ def imgaug_emboss_example():
 # fmt: off
 # The configuration file must have a configs variable
 configs = [
-    chn_data(),
-    enum_data(),
-    rand_data(),
-    eng_word_data(),
-    same_line_data(),
-    extra_text_line_data(),
-    imgaug_emboss_example()
+    # chn_data(),
+    # enum_data(),
+    # rand_data(),
+    # eng_word_data(),
+    # same_line_data(),
+    # extra_text_line_data(),
+    # imgaug_emboss_example(),
+    th_word_data()
 ]
 # fmt: on
+
+# python .\main.py --config .\example_data\example.py
