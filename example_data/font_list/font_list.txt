@@ -1,1 +1,6 @@
-simsun.ttf
+ANGSA.ttf
+angsab.ttf
+ANGSAI.ttf
+AngsanaNewBoldItalic.ttf
+Sarabun-Bold.ttf
+THSarabunNew.ttf
