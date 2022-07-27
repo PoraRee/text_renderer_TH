@@ -34,7 +34,7 @@ def base_cfg(
     name: str, corpus, corpus_effects=None, layout_effects=None, layout=None, gray=False
 ):
     return GeneratorCfg(
-        num_image=300000, # TODO: Edit num_image here
+        num_image=20000, # TODO: Edit num_image here
         save_dir=OUT_DIR / name,
         render_cfg=RenderCfg(
             bg_dir=BG_DIR,
@@ -86,6 +86,15 @@ def th_word_data():
 # The configuration file must have a configs variable
 configs = [
     th_word_data(),
+    th_word_data(),
+    th_word_data(),
+    th_word_data(),
+    th_word_data(),
+    th_word_data(),
+    th_word_data(),
+    th_word_data(),
+    th_word_data(),
+    th_word_data()
 ]
 # fmt: on
 
